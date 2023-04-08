@@ -20,14 +20,16 @@ int *getInputNaturalNumber()
     return number;
 }
 
-int *getAdditionsOfNaturalNumbers(int *number)
+int *getAdditionsOfNaturalNumbers(int *range)
 {
     int *rtn = (int *)malloc(sizeof(int));
     *rtn = 0;
 
-    for (int i = 0; i <= *number; i++)
+    int counter = 0;
+    for (int i = 1; i <= *range; i++)
     {
-        *rtn += i;
+        counter++;
+        *rtn += counter;
     }
 
     return rtn;
