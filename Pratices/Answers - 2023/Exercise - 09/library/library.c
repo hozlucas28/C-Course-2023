@@ -10,7 +10,7 @@ int *getInputNumerator()
 
     while (*number < 0)
     {
-        printf("Error! Please, enter a number greater than or equal to zero...");
+        printf("Error! Please, enter a number greater than or equal to zero...\n");
 
         printf("Enter a number (greater than or equal to zero): ");
         fflush(stdin);
@@ -31,7 +31,7 @@ int *getInputDenominator()
 
     while (*number <= 0)
     {
-        printf("Error! Please, enter a number greater than zero...");
+        printf("Error! Please, enter a number greater than zero...\n");
 
         printf("Enter a number (greater than or equal to zero): ");
         fflush(stdin);
