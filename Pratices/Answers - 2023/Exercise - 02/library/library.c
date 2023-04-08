@@ -3,7 +3,7 @@
 int getInputFirstNumber()
 {
     int number;
-    printf("Enter a number (greater or equal to zero):");
+    printf("Enter a number (greater or equal to zero): ");
     fflush(stdin);
     scanf("%d", &number);
 
@@ -11,7 +11,7 @@ int getInputFirstNumber()
     {
         printf("Error! Please enter a number greater or equal to zero...\n");
 
-        printf("Enter a number (greater or equal to zero):");
+        printf("Enter a number (greater or equal to zero): ");
         fflush(stdin);
         scanf("%d", &number);
     }
@@ -22,7 +22,7 @@ int getInputFirstNumber()
 int getInputSecondNumber(const int *firstNumber)
 {
     int number;
-    printf("Enter a number (between 0 and %d):", *firstNumber);
+    printf("Enter a number (between 0 and %d): ", *firstNumber);
     fflush(stdin);
     scanf("%d", &number);
 
@@ -30,7 +30,7 @@ int getInputSecondNumber(const int *firstNumber)
     {
         printf("Error! Please enter a number between 0 and %d...\n", *firstNumber);
 
-        printf("Enter a number (between 0 and %d):", *firstNumber);
+        printf("Enter a number (between 0 and %d): ", *firstNumber);
         fflush(stdin);
         scanf("%d", &number);
     }

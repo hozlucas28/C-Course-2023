@@ -4,7 +4,7 @@ int getInputNumber()
 {
     int number;
 
-    printf("Enter a number:");
+    printf("Enter a number: ");
     fflush(stdin);
     scanf("%d", &number);
 
