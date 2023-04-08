@@ -4,7 +4,7 @@ int getInputNaturalNumber()
 {
     int number;
 
-    puts("Enter a number: ");
+    printf("Enter a number: ");
     fflush(stdin);
     scanf("%d", &number);
 
@@ -12,7 +12,7 @@ int getInputNaturalNumber()
     {
         printf("Error! %d isn't a natural number. Try again...\n", number);
 
-        puts("Enter a number: ");
+        printf("Enter a number: ");
         fflush(stdin);
         scanf("%d", &number);
     }
@@ -23,6 +23,9 @@ int getInputNaturalNumber()
 int getFactorial(const int *number)
 {
     int rtn = *number;
+    if (rtn == 0)
+        return 1;
+
     for (int i = *number - 1; i > 0; i--)
     {
         rtn *= i;
