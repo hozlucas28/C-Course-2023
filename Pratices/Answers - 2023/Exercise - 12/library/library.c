@@ -10,7 +10,7 @@ int *getInputNaturalNumber()
 
     while (*number < 0)
     {
-        printf("Error! Please enter a number greater than zero...");
+        printf("Error! Please enter a number greater than zero...\n");
 
         printf("Enter a number (greater than zero): ");
         fflush(stdin);
