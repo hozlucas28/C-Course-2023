@@ -13,6 +13,8 @@
 int main()
 {
     int arr[SIZE] = ARRAY;
+    sortArrayAscending(arr, SIZE);
+
     printf("Original array: ");
     showArray(arr, SIZE - NUMBERS_OF_ELEMENTS_TO_INSERT);
 
@@ -21,7 +23,7 @@ int main()
     printf("Updated array: ");
     showArray(arr, SIZE);
 
-    sortArrayAscending(arr, SIZE);
+    sortArrayAscending(arr, SIZE + NUMBERS_OF_ELEMENTS_TO_INSERT);
     printf("Ordered array: ");
     showArray(arr, SIZE);
 
