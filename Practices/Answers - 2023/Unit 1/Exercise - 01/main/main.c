@@ -3,7 +3,8 @@
 
 #include "../library/library.h"
 
-#define SIZE 10
+#define NUMBERS_OF_ELEMENTS_TO_INSERT 1
+#define SIZE (10 + NUMBERS_OF_ELEMENTS_TO_INSERT)
 #define MIN_INDEX 0
 #define MAX_INDEX 9
 #define VECTOR                        \
@@ -15,12 +16,12 @@ int main()
 {
     int array[] = VECTOR;
     printf("Original vector: ");
-    showArray(array, SIZE);
+    showArray(array, SIZE - 1);
 
     int *number = getInputNumber();
     int *index = getInputIndex(MIN_INDEX, MAX_INDEX);
 
-    insertElementToVector(array, number, index);
+    insertElementToVector(number, index, array, SIZE);
     printf("New vector: ");
     showArray(array, SIZE);
 

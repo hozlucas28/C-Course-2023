@@ -4,5 +4,5 @@
 
 int *getInputNumber();
 int *getInputIndex();
-void insertElementToVector(int *, int *, int *);
+void insertElementToVector(int *, int *, int *, int);
 void showArray(int *, int);

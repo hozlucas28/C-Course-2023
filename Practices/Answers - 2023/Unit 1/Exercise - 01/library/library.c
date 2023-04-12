@@ -31,8 +31,13 @@ int *getInputIndex(int min, int max)
     return index;
 }
 
-void insertElementToVector(int *array, int *element, int *index)
+void insertElementToVector(int *element, int *index, int *array, int size)
 {
+    for (int i = size - 1; i > *index; i--)
+    {
+        array[i] = array[i - 1];
+    }
+
     array[*index] = *element;
 }
 
