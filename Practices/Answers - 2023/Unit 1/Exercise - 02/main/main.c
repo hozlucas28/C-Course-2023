@@ -27,5 +27,7 @@ int main()
     printf("Ordered array: ");
     showArray(arr, SIZE);
 
+    free(element);
+
     return 0;
 }
