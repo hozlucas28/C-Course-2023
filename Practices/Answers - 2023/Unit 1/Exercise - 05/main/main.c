@@ -23,5 +23,7 @@ int main()
     printf("Modified array = ");
     showArray(arr, &size);
 
+    free(number);
+
     return 0;
 }

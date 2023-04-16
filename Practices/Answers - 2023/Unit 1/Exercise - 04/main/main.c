@@ -4,7 +4,10 @@
 #include "../library/library.h"
 
 #define SIZE 15
-#define ARRAY {1,2,5,6,4,8,3,1,2,5,6,8,9,10,1}
+#define ARRAY                                        \
+    {                                                \
+        1, 2, 5, 6, 4, 8, 3, 1, 2, 5, 6, 8, 9, 10, 1 \
+    }
 
 int main()
 {
@@ -14,11 +17,13 @@ int main()
     printf("Original array = ");
     showArray(arr, &size);
 
-    int* number = getInputNumber();
+    int *number = getInputNumber();
     deleteFirstOccurrenceNumber(number, arr, &size);
 
     printf("Modified array = ");
     showArray(arr, &size);
+
+    free(number);
 
     return 0;
 }
